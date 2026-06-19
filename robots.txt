@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://subawbuati.github.io/app-ssl-hth-com/sitemap.xml

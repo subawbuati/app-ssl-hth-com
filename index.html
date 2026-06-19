@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hth · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #fce6d4 0%, #f7d2b0 45%, #f0bc8e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .card {
+            max-width: 820px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 40px 40px 32px 32px;
+            box-shadow: 0 20px 40px -12px rgba(160, 90, 50, 0.18), 0 8px 24px rgba(0, 0, 0, 0.03);
+            padding: 2.8rem 2.5rem 3rem;
+            transition: box-shadow 0.25s;
+        }
+
+        .card:hover {
+            box-shadow: 0 28px 48px -16px rgba(150, 80, 40, 0.22);
+        }
+
+        .hero-title {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #9c6644, #b98b6a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-sub {
+            font-size: 1.05rem;
+            color: #7b5f4a;
+            border-left: 4px solid #e2b995;
+            padding-left: 1.1rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .section {
+            margin-top: 2.2rem;
+        }
+
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #4f3a2b;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .section-heading::before {
+            content: "▹";
+            color: #c3936a;
+            font-size: 1.5rem;
+            line-height: 1;
+            margin-right: 0.2rem;
+        }
+
+        .text-block {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #3e2f24;
+            margin-bottom: 1.4rem;
+        }
+
+        .text-block a {
+            display: inline;
+            color: #9c6644;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            padding: 0 0.05rem;
+            border-radius: 4px;
+        }
+
+        .text-block a:hover {
+            border-bottom: 1px solid #c3936a;
+            background: #f8efe7;
+        }
+
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 0.8rem 0 1.2rem;
+        }
+
+        .highlight-item {
+            background: #fbf4ed;
+            border-radius: 60px;
+            padding: 0.5rem 1.4rem;
+            font-size: 0.95rem;
+            color: #5a4233;
+            border: 1px solid #eddccf;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .highlight-item:hover {
+            background: #f2e2d4;
+            transform: scale(1.01);
+        }
+
+        .tip-box {
+            background: #f9f1ea;
+            border-radius: 28px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.8rem 0 1rem;
+            border-left: 6px solid #dbb28f;
+        }
+
+        .tip-box p {
+            margin: 0.2rem 0;
+            font-size: 0.98rem;
+            color: #3b2c20;
+            line-height: 1.6;
+        }
+
+        .faq-mini {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #6f523c;
+            margin-bottom: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .faq-a {
+            color: #4e3a2b;
+            line-height: 1.6;
+            font-size: 0.96rem;
+            padding-left: 0.6rem;
+            border-left: 2px solid #e2c8b5;
+        }
+
+        .footnote {
+            margin-top: 2.4rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e6d4c4;
+            font-size: 0.9rem;
+            color: #846c5a;
+            text-align: left;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 2rem 1.4rem 2.2rem;
+                border-radius: 32px;
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .highlight-grid {
+                gap: 0.6rem;
+            }
+            .highlight-item {
+                padding: 0.35rem 1rem;
+                font-size: 0.88rem;
+            }
+            .tip-box {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hero-title">关于 hth 的简短说明</div>
+        <div class="hero-sub">产品视角 · 主题展开</div>
+
+        <div class="text-block">
+            当我们谈论 <strong>hth</strong>，我们其实是在谈论一组围绕信息组织与访问效率的产品实践。它并非一个空泛的代号，而是对应着一套持续迭代的在线服务结构——从底层逻辑到交互界面，都在尝试让用户更直接地触及核心内容，减少不必要的跳转与噪音。这个站点所承载的，正是一种经过梳理与验证的路径。
+        </div>
+
+        <div class="section">
+            <div class="section-heading">几个鲜明的特点</div>
+            <div class="highlight-grid">
+                <span class="highlight-item">聚焦 · 无冗余导航</span>
+                <span class="highlight-item">响应 · 自适应布局</span>
+                <span class="highlight-item">稳定 · 基础架构</span>
+                <span class="highlight-item">直给 · 低认知负荷</span>
+            </div>
+            <div class="text-block">
+                与许多同类平台不同，<a href="https://app-ssl-hth.com">hth</a> 在视觉与信息层级上刻意做了减法。它没有堆砌复杂的仪表盘，也没有用动态弹窗打断阅读流。所有功能入口都经过筛选，确保每一个按钮、每一段文案都有明确的实用指向。对于熟悉轻量化工具的用户来说，这种克制反而形成了独特的可依赖感。
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-heading">适合的场景与建议</div>
+            <div class="text-block">
+                如果你日常需要快速查阅特定数据、管理轻量级任务，或者希望在一个干净的环境里完成信息确认，<strong>hth</strong> 提供的界面与逻辑是值得尝试的。建议初次使用的人先花几分钟浏览首页的结构分区，理解信息流的顺序，而不是急于点击。大多数疑问都能在页面本身的上下文里找到线索。
+            </div>
+            <div class="tip-box">
+                <p>💡 小提示：部分功能依赖 JavaScript 基础支持，请保持浏览器处于现代版本。若遇到加载异常，检查网络环境后刷新即可，通常无需额外配置。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-heading">常见疑问摘要</div>
+            <div class="faq-mini">
+                <div class="faq-q">问：hth 是否需要注册才能使用全部内容？</div>
+                <div class="faq-a">并非所有部分都要求注册。公开区域可直接浏览，部分个性化功能可能需登录，这符合多数在线服务的一般惯例。具体范围以页面实际展示为准。</div>
+                <div class="faq-q">问：移动设备上的体验如何？</div>
+                <div class="faq-a">经过适配测试，主流手机浏览器均可获得接近桌面端的阅读与操作体验，横向滚动极少出现。如有布局错位，可尝试旋转屏幕或更新浏览器。</div>
+                <div class="faq-q">问：数据安全性方面有哪些基础保障？</div>
+                <div class="faq-a">站点采用标准 HTTPS 连接，通信层加密。建议用户不要在公共设备上保存个人敏感信息，且定期清理浏览器缓存。</div>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <span>本页为产品说明式介绍，内容基于公开信息整理，旨在帮助理解服务轮廓。</span>
+            <br>
+            <span style="opacity:0.55;">· 版本参考 2025 · 客观描述，不构成承诺</span>
+        </div>
+    </div>
+</body>
+</html>
